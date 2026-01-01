@@ -283,6 +283,8 @@ public:
 #ifdef MAPBASE
 	virtual bool		CanAutoSwitchToNextBestWeapon( CBaseCombatWeapon *pWeapon );
 #endif
+	//Aldebaran Express
+	void                ALDB_CheckUseEntity(void);
 
 	virtual int			GiveAmmo( int nCount, int nAmmoIndex, bool bSuppressSound);
 	virtual bool		BumpWeapon( CBaseCombatWeapon *pWeapon );

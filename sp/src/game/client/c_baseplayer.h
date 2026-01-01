@@ -441,6 +441,11 @@ public:
 
 	// For weapon prediction
 	bool			m_fOnTarget;		//Is the crosshair on a target?
+
+	//Aldebaran hud
+	char            m_iszALDBUseEntityName[256];
+	char            m_iszALDBUseEntityUse[256];
+	bool            m_bALDBOnUseEntity;
 	
 	char			m_szAnimExtension[32];
 

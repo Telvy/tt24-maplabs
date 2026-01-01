@@ -663,6 +663,11 @@ $Project
 			$File	"game_controls\vguitextwindow.cpp"
 			$File	"game_controls\IconPanel.cpp"
 		}
+		
+		$Folder	"tt24"
+		{
+			$File	"tt24\aldb_hud_crosshair.cpp"
+		}
 
 	}
 

@@ -813,6 +813,27 @@ void CHL2_Player::HandleArmorReduction( void )
 }
 
 //-----------------------------------------------------------------------------
+// Purpose: Hud stuff for Aldebaran
+//-----------------------------------------------------------------------------
+void CHL2_Player::ALDB_CheckUseEntity(void)
+{
+	CBaseEntity* pUseEntity = FindUseEntity();
+
+	if (pUseEntity)
+	{
+		m_bALDBOnUseEntity = true;
+		m_iszALDBUseEntityName = pUseEntity->m_iszALDBSpecialName;
+		m_iszALDBUseEntityUse = pUseEntity->m_iszALDBSpecialUse;
+	}
+	else
+	{
+		m_bALDBOnUseEntity = false;
+		m_iszALDBUseEntityName = NULL_STRING;
+		m_iszALDBUseEntityUse = NULL_STRING;
+	}
+}
+
+//-----------------------------------------------------------------------------
 // Purpose: Allow pre-frame adjustments on the player
 //-----------------------------------------------------------------------------
 void CHL2_Player::PreThink(void)

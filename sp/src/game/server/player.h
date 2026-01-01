@@ -946,6 +946,10 @@ public:
 	int						m_afButtonForced;	// These are forced onto the player's inputs
 
 	CNetworkVar( bool, m_fOnTarget );		//Is the crosshair on a target?
+	//Aldebaran Express hud crosshair
+	CNetworkVar(string_t, m_iszALDBUseEntityName);
+	CNetworkVar(string_t, m_iszALDBUseEntityUse);
+	CNetworkVar(bool, m_bALDBOnUseEntity);
 
 	char					m_szAnimExtension[32];
 

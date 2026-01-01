@@ -949,7 +949,9 @@ public:
 	// Disables receiving projected textures. Based on a keyvalue from later Source games.
 	CNetworkVar( bool, m_bDisableFlashlight );
 #endif
-
+	//Aldebaran Express hud crosshair
+	string_t m_iszALDBSpecialName;
+	string_t m_iszALDBSpecialUse;
 	// was pev->rendercolor
 	CNetworkColor32( m_clrRender );
 	const color32 GetRenderColor() const;

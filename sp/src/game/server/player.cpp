@@ -457,6 +457,11 @@ BEGIN_DATADESC( CBasePlayer )
 	DEFINE_FIELD( m_bDrawPlayerModelExternally, FIELD_BOOLEAN ),
 #endif
 
+	//Aldebaran Expres
+	DEFINE_FIELD(m_iszALDBUseEntityName, FIELD_STRING),
+	DEFINE_FIELD(m_iszALDBUseEntityUse, FIELD_STRING),
+	DEFINE_FIELD(m_bALDBOnUseEntity, FIELD_BOOLEAN),
+
 	// Function Pointers
 	DEFINE_FUNCTION( PlayerDeathThink ),
 

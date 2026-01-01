@@ -1961,6 +1961,9 @@ BEGIN_DATADESC_NO_BASE( CBaseEntity )
 	DEFINE_KEYFIELD( m_iViewHideFlags, FIELD_INTEGER, "viewhideflags" ),
 	DEFINE_KEYFIELD( m_bDisableFlashlight, FIELD_BOOLEAN, "disableflashlight" ),
 #endif
+	//Aldebaran Express hud crosshair
+	DEFINE_KEYFIELD(m_iszALDBSpecialName, FIELD_STRING, "aldb_specialname"),
+	DEFINE_KEYFIELD(m_iszALDBSpecialUse, FIELD_STRING, "aldb_specialuse"),
 #if !defined( NO_ENTITY_PREDICTION )
 	// DEFINE_FIELD( m_PredictableID, CPredictableId ),
 #endif
